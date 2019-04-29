@@ -3,10 +3,11 @@
 //  "ready to ship to production" while also packaging as single file as required by a Gist. I split the difference by
 //  making this a single-file Mocha test. I have also pushed this to a public GitHub repository that makes it a little
 //  clearer to run via npm test.
-//  http://github.blah.blah
+//  https://github.com/mattnewell/flatten
 //
 //  In addition, there are simpler ways to accomplish array flattening in JavaScript (concat or reduce), but those
-//  options seemed to violate the spirit of "avoid using language defined methods."
+//  options seemed to violate the spirit of "avoid using language defined methods." Instead, I chose a more traditional
+//  recursive implementation.
 
 function flatten(array, result = []) {
     for (let n = 0, length = array.length; n < length; n++) {
